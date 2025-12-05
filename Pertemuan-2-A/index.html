@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Eksternal -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal -->
+    <style>
+        /* Style Flex */
+        /* .parent-1{
+            height: 300px;
+            border: 3px solid black;
+
+            display: flex;
+            gap: 10px;
+
+            justify-content: space-between;
+            align-items: flex-end;
+
+            flex-direction: row;
+
+            flex-wrap: wrap;
+            align-content: center;
+
+        }
+
+        .child-1{
+            width: 100px;
+            height: 50px;
+            background-color: aqua;
+            border: 1px solid red
+        }
+
+        .child-2{
+            width: 100px;
+            height: 50px;
+            background-color: aqua;
+            border: 1px solid red
+        }
+
+        .child-3{
+            width: 100px;
+            height: 50px;
+            background-color: aqua;
+            border: 1px solid red
+        }
+
+        .child-4{
+            width: 100px;
+            height: 50px;
+            background-color: aqua;
+            border: 1px solid red
+        } */
+
+
+        /* Style Grid */
+
+        .parent-1{
+            height: 600px;
+            border: 3px solid black;
+
+            display: grid;
+            gap: 20px;
+
+            grid-template-columns: 100px 100px 100px;
+            /* grid-template-rows: 60px 60px; */
+
+            justify-content: space-between;
+            align-content: center;
+
+
+        }
+
+        .child-1{
+            height: 50px;
+            background-color: aqua;
+            border: 1px solid red
+        }
+
+        .child-2{
+            height: 50px;
+            background-color: aqua;
+            border: 1px solid red
+        }
+
+        .child-3{
+            height: 50px;
+            background-color: aqua;
+            border: 1px solid red
+        }
+
+        .child-4{
+            height: 50px;
+            background-color: aqua;
+            border: 1px solid red
+        }
+
+        /* Media Query */
+
+        .media{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+
+        @media (max-width:800px){
+            .media{
+                background-color: blue;
+                font-size: 10px;
+                width: 150px;
+            }
+
+
+        }
+
+        @media (max-width: 500px){
+            .media{
+                background-color: green;
+                font-size: 9px;
+            }
+        }
+
+        /* Transition */
+
+        .box{
+            width: 150px;
+            height: 150px;
+            background-color: skyblue;
+
+            transition-property: all;
+            transition-duration: 2s;
+            transition-delay: 2s;
+            /* transition-timing-function: ease-in-out ; */
+        }
+
+        .box:hover{
+            /* background-color: royalblue; */
+            /* transform: rotate(-45deg); */
+            /* transform: translateX(-100px); */
+            transform: scale(1.1);
+        }
+
+
+        /* Animation */
+
+        .card{
+            width: 150px;
+            height: 150px;
+            background-color: aqua;
+
+            animation-name: card_animation;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+            /* animation-timing-function: linear; */
+        }
+
+        @keyframes card_animation {
+            0% {
+                transform: translateY(30px);
+            }
+
+            25%{
+
+            }
+
+            50%{
+                background-color: red;
+            }
+
+            70%{
+
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <!-- Flex -->
+    <!-- <div class="parent-1">
+        <div class="child-1">1</div>
+        <div class="child-2">2</div>
+        <div class="child-3">3</div>
+        <div class="child-4">4</div>
+    </div> -->
+
+
+    <!-- Grid -->
+    <!-- <div class="parent-1">
+        <div class="child-1">1</div>
+        <div class="child-2">2</div>
+        <div class="child-3">3</div>
+        <div class="child-4">4</div>
+    </div> -->
+
+    <!-- <div class="media"></div> -->
+
+    <!-- <div class="box"></div> -->
+
+    <div class="card"></div>
+
+</body>
+</html>
