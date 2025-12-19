@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <h1 class="text-[20px] italic font-mono bg-red-700">
+      Hello world!
+    </h1>
+
+    <!-- 1. Text dan Spacing -->
+    <h1 class="text-4xl font-bold text-blue-600">Tailwind Practice</h1>
+
+    <p class="mt-[20px] ml-[50px]">Ini adalah spacing text</p>
+
+    <!-- 2. Box dan Background -->
+    <div class="mt-[20px] bg-white p-[10px] rounded-lg shadow">
+        <h2 class="text-2xl font-semibold">Box Simple</h2>
+        <p class="text-gray-600 mt-2">Ini isi dari boxnya...</p>
+    </div>
+
+    <!-- 3. Button Style -->
+    <button class="mt-10 mb-10 ml-10 bg-indigo-600 text-white pt-2 pb-2 pl-6 pr-6 rounded-lg 
+    hover:bg-indigo-700 transition cursor-pointer">Login Account</button>
+
+    <!-- 4. Flex Box -->
+    <div class="mt-10 mb-10 flex gap-4 justify-center">
+        <div class="p-4 bg-blue-500 text-white rounded">Home</div>
+        <div class="p-4 bg-blue-500 text-white rounded">About Us</div>
+        <div class="p-4 bg-blue-500 text-white rounded">Login</div> 
+    </div>
+
+    <!-- 5. Grid & Responsive -->
+    <div class="m-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="bg-red-400 p-4 text-white rounded">Item 1</div>
+        <div class="bg-red-400 p-4 text-white rounded">Item 2</div>
+        <div class="bg-red-400 p-4 text-white rounded">Item 3</div>
+    </div>
+
+    <!-- 6. Navigation Bar -->
+    <nav class="mt-12 bg-white shadow p-4 flex justify-between items-center">
+        <h1 class="text-xl font-bold">MyWebsite</h1>
+
+        <ul class="flex gap-6 text-gray-700">
+            <li class="hover:text-blue-600 hover:cursor-pointer">Home</li>
+            <li class="hover:text-blue-600 hover:cursor-pointer">About</li>
+            <li class="hover:text-blue-600 hover:cursor-pointer">Contact</li>
+        </ul>
+    </nav>
+
+  </body>
+</html>
